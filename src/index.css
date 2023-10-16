@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Bai Jamjuree;
+  }
+}
+
+body {
+  background-color: rgb(243, 244, 246);
+  overflow-y: hidden; 
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .slide {
+  width: 98%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.slide::-webkit-scrollbar {
+  display: none;
+} */
