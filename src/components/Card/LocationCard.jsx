@@ -4,7 +4,7 @@ function LocationCard({ Img, Price, Rating, Location, Description }) {
   return (
     <>
       <div className="bg-white p-1 rounded-lg flex gap-2 w-full shadow-md shadow-gray-300">
-        <div className="w-[120px] h-full">
+        <div className="lg:w-[80%] w-[200px] h-full">
           <img src={Img} alt="" className="object-cover object-center rounded-lg w-full h-full" />
         </div>
 

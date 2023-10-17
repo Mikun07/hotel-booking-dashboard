@@ -29,13 +29,13 @@ function InputDropdown({ Icon, Item1, Item2, Item3, Placeholder }) {
 
         {isOpen && (
           <div className=" bg-white absolute top-20 flex flex-col gap-2 items-start rounded-xl p-2 w-full">
-            <div className=" flex hover:bg-gray-400 p-2 cursor-pointer w-full rounded-r-xl border-l-gray-400 hover:border-l-blue-950 hover:border-l-4">
+            <div className=" flex hover:bg-gray-400 p-2 cursor-pointer w-full  border-l-gray-400 hover:border-l-blue-950 hover:border-l-4">
               <h3 className=" capitalize font-bold text">{Item1}</h3>
             </div>
-            <div className=" flex hover:bg-gray-400 p-2 cursor-pointer w-full rounded-r-xl border-l-gray-400 hover:border-l-blue-950 hover:border-l-4">
+            <div className=" flex hover:bg-gray-400 p-2 cursor-pointer w-full border-l-gray-400 hover:border-l-blue-950 hover:border-l-4">
               <h3 className="capitalize font-bold">{Item2}</h3>
             </div>
-            <div className=" flex hover:bg-gray-400 p-2 cursor-pointer w-full rounded-r-xl border-l-gray-400 hover:border-l-blue-950 hover:border-l-4">
+            <div className=" flex hover:bg-gray-400 p-2 cursor-pointer w-full border-l-gray-400 hover:border-l-blue-950 hover:border-l-4">
               <h3 className="capitalize font-bold">{Item3}</h3>
             </div>
           </div>
