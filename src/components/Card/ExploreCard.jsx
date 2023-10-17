@@ -12,7 +12,7 @@ function ExploreCard({ Img, Price, Rating, Location, Description }) {
           />
         </div>
 
-        <div className="flex w-[56%] text-xs flex-col gap-4 justify-center ">
+        <div className="flex text-xs flex-col gap-4 justify-center ">
           <div className="flex justify-between ">
             <p className="capitalize text-xs font-semibold text-gray-700">
               {Location}

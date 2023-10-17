@@ -8,7 +8,7 @@ function LocationCard({ Img, Price, Rating, Location, Description }) {
           <img src={Img} alt="" className="object-cover object-center rounded-lg w-full h-full" />
         </div>
 
-        <div className="flex w-[56%] text-xs flex-col gap-4 justify-center ">
+        <div className="flex text-xs flex-col gap-4 justify-center ">
           <div className="flex justify-between ">
             <p className="capitalize  font-semibold text-gray-700">{Location}</p>
 

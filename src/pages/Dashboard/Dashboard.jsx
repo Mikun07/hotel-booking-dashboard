@@ -32,14 +32,14 @@ function Dashboard() {
   return (
     <>
       <div className="">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 px-1">
           <div className="relative flex flex-col justify-center items-center">
             <img
               src={HH}
               alt="Hotel"
               className="w-full h-28 object-cover object-center rounded-2xl z-0"
             />
-            <div className=" bg-white w-[95%] flex items-center h-16 rounded-xl absolute z-10 bottom-[-25px]">
+            <div className=" bg-white w-[95%] flex items-center lg:h-16 rounded-xl absolute z-10 bottom-[-25px]">
               <div className="w-full relative border-6 flex justify-between px-4 items-center rounded-xl">
                 <InputDropdown
                   Icon="location-outline"
@@ -95,7 +95,7 @@ function Dashboard() {
 
             <div
               ref={quoteBoxRef}
-              className="slide bg-transparent px-3 flex gap-6 py-2 h-40"
+              className="slide bg-transparent px-3 flex gap-6 py-2 h-40 overflow-x-auto"
             >
               <LocationCard
                 Img={France}
@@ -134,7 +134,7 @@ function Dashboard() {
               </div>
             </div>
 
-            <div className="w-full bg-transparent px-3 grid lg:grid-cols-5 grid-cols-2 overflow-y-hidden gap-2 py-2 h-52">
+            <div className="w-full bg-transparent px-3 grid lg:grid-cols-5 grid-cols-2 gap-2 py-2 lg:h-52 h-[196px] overflow-y-auto">
               <HotelCard
                 Img={H1}
                 Location="Kensington / London"
@@ -178,7 +178,7 @@ function Dashboard() {
               <h2 className="font-semibold text-blue-950">Explore France</h2>
             </div>
 
-            <div className="slide bg-transparent px-3 flex gap-6 py-2 h-40">
+            <div className="slide bg-transparent px-3 flex gap-6 py-2 h-40 overflow-x-auto">
               <ExploreCard
                 Img={France1}
                 Location="Eiffel Tower,Paris, France"

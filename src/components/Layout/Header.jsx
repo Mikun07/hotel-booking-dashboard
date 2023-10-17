@@ -8,11 +8,11 @@ function Header() {
   })
   return (
     <>
-      <header className="bg-white mt-3 h-14 w-full rounded-2xl flex items-center justify-between px-3">
+      <header className="bg-white h-14 lg:w-full w-[87%] rounded-2xl flex items-center justify-between px-3">
         <InputSearch />
 
         <div className="flex gap-4 items-center">
-          <span className=" font-semibold">{new Date().toDateString()}</span>
+          <span className=" font-semibold text-xs lg:text-base">{new Date().toDateString()}</span>
 
           <div className="relative flex">
             <button className=" bg-transparent w-[35px] h-[35px] shadow-md shadow-gray-300 border-2 rounded-lg flex items-center justify-center">
