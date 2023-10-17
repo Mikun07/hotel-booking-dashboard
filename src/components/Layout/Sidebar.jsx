@@ -48,7 +48,7 @@ function Sidebar() {
         <div className="flex flex-col justify-between py-2">
           <div className="flex flex-col items-center gap-2">
             <h1 className="font-bold text-blue-950">
-              Mima<span className=" text-gray-300">Booking</span>
+              Mima<span className=" text-gray-700">Booking</span>
             </h1>
 
             <div className="relative flex justify-center py-2 w-full h-full">
@@ -88,7 +88,7 @@ function Sidebar() {
             ))}
           </ul>
 
-          <button className="w-[130px] flex font-medium items-center text-center gap-3 justify-center capitalize">
+          <button className="w-[130px] flex font-medium items-center text-center text-red-600 gap-3 justify-center capitalize">
             <ion-icon name="chevron-forward-circle-outline"></ion-icon>
             logout
           </button>
