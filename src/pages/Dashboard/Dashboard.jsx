@@ -14,6 +14,8 @@ import London from "../../assets/img/London.jpeg";
 import LocationCard from "../../components/Card/LocationCard";
 import HotelCard from "../../components/Card/HotelCard";
 import ExploreCard from "../../components/Card/ExploreCard";
+import InputDropdown from "../../components/Input/InputDropdown";
+import toast, { Toaster } from "react-hot-toast";
 
 function Dashboard() {
   const quoteBoxRef = useRef(null);
@@ -22,9 +24,10 @@ function Dashboard() {
     quoteBoxRef.current.scrollLeft -= 100;
   };
   const scrollRight = () => {
-    quoteBoxRef.current.scrollLeft += 100;
+    quoteBoxRef.current.scrollRight += 100;
   };
 
+  const notify = () => toast.success("Done!");
 
   return (
     <>
@@ -36,7 +39,36 @@ function Dashboard() {
               alt="Hotel"
               className="w-full h-28 object-cover object-center rounded-2xl z-0"
             />
-            <div className=" bg-white lg:w-[1000px] w-[500px] h-12 rounded-xl absolute z-10 bottom-[-25px]"></div>
+            <div className=" bg-white w-[95%] flex items-center h-16 rounded-xl absolute z-10 bottom-[-25px]">
+              <div className="w-full relative border-6 flex justify-between px-4 items-center rounded-xl">
+                <InputDropdown
+                  Icon="location-outline"
+                  Placeholder="Where are you going?"
+                  Item1="Paris"
+                  Item2="London"
+                  Item3="Istanbul"
+                />
+                <InputDropdown
+                  Icon="calendar-outline"
+                  Placeholder="Check-in date"
+                />
+                <InputDropdown
+                  Icon="person-outline"
+                  Placeholder="How many people?"
+                  Item1="1 Adult"
+                  Item2="2 Adult"
+                  Item3="3 Adult"
+                />
+                <button
+                  onClick={notify}
+                  type="submit"
+                  className="capitalize px-2 py-1 w-24 h-10 justify-center items-center flex font-medium bg-blue-950 shadow-sm shadow-gray-400 text-gray-300 rounded-xl tracking-wider"
+                >
+                  Search
+                  <Toaster />
+                </button>
+              </div>
+            </div>
           </div>
 
           <div className=" flex flex-col gap-3 mt-10">
@@ -46,16 +78,25 @@ function Dashboard() {
               </h2>
 
               <div className="flex gap-2">
-                <button onClick={scrollLeft} className="flex cursor-pointer shadow-md shadow-gray-300 items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-blue-950 hover:border-none hover:bg-blue-950 hover:text-white">
+                <button
+                  onClick={scrollLeft}
+                  className="flex cursor-pointer shadow-md shadow-gray-300 items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-blue-950 hover:border-none hover:bg-blue-950 hover:text-white"
+                >
                   <ion-icon name="chevron-back-outline"></ion-icon>
                 </button>
-                <button onClick={scrollRight} className="flex cursor-pointer shadow-md shadow-gray-300 items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-blue-950 hover:border-none hover:bg-blue-950 hover:text-white">
+                <button
+                  onClick={scrollRight}
+                  className="flex cursor-pointer shadow-md shadow-gray-300 items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-blue-950 hover:border-none hover:bg-blue-950 hover:text-white"
+                >
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </button>
               </div>
             </div>
 
-            <div  ref={quoteBoxRef} className="slide bg-transparent px-3 flex gap-6 py-2 h-40">
+            <div
+              ref={quoteBoxRef}
+              className="slide bg-transparent px-3 flex gap-6 py-2 h-40"
+            >
               <LocationCard
                 Img={France}
                 Location="Montmartre, France"
@@ -134,21 +175,10 @@ function Dashboard() {
 
           <div className=" flex flex-col gap-3 mt-10">
             <div className=" flex justify-between">
-              <h2 className="font-semibold text-blue-950">
-                Explore France
-              </h2>
-
-              {/* <div className="flex gap-2">
-                <button onClick={scrollLeft} className="flex cursor-pointer shadow-md shadow-gray-300 items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-blue-950 hover:border-none hover:bg-blue-950 hover:text-white">
-                  <ion-icon name="chevron-back-outline"></ion-icon>
-                </button>
-                <button onClick={scrollRight} className="flex cursor-pointer shadow-md shadow-gray-300 items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-blue-950 hover:border-none hover:bg-blue-950 hover:text-white">
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
-              </div> */}
+              <h2 className="font-semibold text-blue-950">Explore France</h2>
             </div>
 
-            <div  ref={quoteBoxRef} className="slide bg-transparent px-3 flex gap-6 py-2 h-40">
+            <div className="slide bg-transparent px-3 flex gap-6 py-2 h-40">
               <ExploreCard
                 Img={France1}
                 Location="Eiffel Tower,Paris, France"
