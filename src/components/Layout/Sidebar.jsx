@@ -48,7 +48,7 @@ function Sidebar() {
   return (
     <>
       {width > 768 ? (
-        <div className="bg-white w-64 h-screen flex justify-center py-4 ">
+        <div className="bg-white  w-64 max-h-screen flex justify-center py-4 ">
           <div className="flex flex-col justify-between py-2">
             <div className="flex flex-col items-center gap-2">
               <h1 className="font-bold text-blue-950">
@@ -107,7 +107,7 @@ function Sidebar() {
             <ion-icon name="menu" size="large"></ion-icon>
           </div>
           {nav && (
-            <div className="bg-white w-64 h-screen flex justify-center py-4 absolute top-0 left-0 z-20 transition-all transit duration-300">
+            <div className="bg-white w-64 h-screen flex justify-center py-4 fixed top-0 left-0 z-20">
               <div className="flex flex-col justify-between py-2">
                 <div className="flex flex-col items-center gap-2">
                   <h1 className="font-bold text-blue-950">

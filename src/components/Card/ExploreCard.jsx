@@ -1,27 +1,22 @@
 import React from "react";
 
-function ExploreCard({ Img, Price, Rating, Location, Description }) {
+function ExploreCard({ Img, Price, Location, Description }) {
   return (
     <>
-      <div className="bg-white p-1 rounded-lg flex gap-2 w-full shadow-md shadow-gray-300">
-        <div className="lg:w-[80%] w-[200px] h-full">
+      <article className="bg-white p-1 rounded-lg flex gap-2 h-[180px] shadow-md shadow-gray-300">
+        <div className="w-[200px] h-full">
           <img
             src={Img}
             alt=""
-            className="object-cover object-center rounded-lg w-full h-full"
+            className="object-cover rounded-lg w-full h-full"
           />
         </div>
 
-        <div className="flex text-xs flex-col gap-4 justify-center ">
-          <div className="flex justify-between ">
+        <div className="flex text-xs w-[250px] flex-col gap-4 justify-center ">
+          <div className="flex">
             <p className="capitalize text-xs font-semibold text-gray-700">
               {Location}
             </p>
-
-            {/* <span className="flex text-xs items-center gap-1 text-yellow-500">
-              <ion-icon name="star" className=" "></ion-icon>
-              <p className=" font-medium text-gray-700">{Rating}</p>
-            </span> */}
           </div>
 
           <p className=" text-gray-400 text-xs font-medium leading-4">
@@ -30,7 +25,7 @@ function ExploreCard({ Img, Price, Rating, Location, Description }) {
 
           <p className=" font-semibold text-blue-950">${Price}</p>
         </div>
-      </div>
+      </article>
     </>
   );
 }

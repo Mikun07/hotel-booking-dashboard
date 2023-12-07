@@ -8,7 +8,7 @@ function Header() {
   })
   return (
     <>
-      <header className="bg-white h-14 lg:w-full w-[87%] rounded-2xl flex items-center justify-between px-3">
+      <div className="bg-transparent h-14 rounded-2xl w-full flex items-center justify-between px-3">
         <InputSearch />
 
         <div className="flex gap-4 items-center">
@@ -21,7 +21,7 @@ function Header() {
             <span className="bg-red-600 shadow-sm shadow-red-500 text-white w-4 h-4 text-xs flex justify-center rounded-full absolute left-[-6px] top-[-6px]">2</span>
           </div>
         </div>
-      </header>
+      </div>
     </>
   );
 }

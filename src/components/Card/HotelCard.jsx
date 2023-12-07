@@ -7,15 +7,15 @@ function HotelCard({ Img, Price, Rating, Location, Description }) {
   return (
     <>
       <div className="bg-white px-1 py-2 rounded-lg flex flex-col gap-2 shadow-md shadow-gray-300">
-        <div className="w-full h-[80px]">
+        <div className=" flex justify-center w-[300px] h-[140px]">
           <img
             src={Img}
             alt=""
-            className="object-cover object-center rounded-lg w-full h-full"
+            className="object-cover rounded-lg w-full h-full"
           />
         </div>
 
-        <div className="flex flex-col gap-2 px-2 justify-center ">
+        <div className="flex flex-col gap-2 px-2 justify-center h-[120px]">
           <p className="capitalize text-sm font-semibold text-gray-700">
             {Description}
           </p>

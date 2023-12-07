@@ -9,22 +9,22 @@ function Layout() {
   return (
     <>
       {width > 768 ? (
-        <div className="w-full flex items-start">
-          <Sidebar />
-          <div className="w-full col-span-2 mx-4 mt-3 h-screen">
+        <div className="flex w-screen h-screen overflow-hidden">
+          <div className="overflow-hidden flex h-full">
+            <Sidebar />
+          </div>
+          <div className="w-full flex-1 px-4 flex-col h-screen overflow-y-auto">
             <Header />
-            <div className="w-full mt-3 pt-3 mb-16 h-[550px] overflow-y-auto">
-              <Outlet />
-            </div>
+            <Outlet />
           </div>
         </div>
       ) : (
-        <div className=" w-full mx-3 mt-3 mb-16">
-          <div className=" flex gap-2 items-center mb-3">
+        <div className="w-full mx-1 mt-4">
+          <div className="flex overflow-hidden">
             <Sidebar />
             <Header />
           </div>
-          <div className=" w-[590px] pt-3 h-[540px] overflow-y-auto">
+          <div className="">
             <Outlet />
           </div>
         </div>

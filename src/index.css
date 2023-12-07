@@ -12,7 +12,7 @@
 
 body {
   background-color: rgb(243, 244, 246);
-  overflow-y: hidden; 
+  /* overflow-y: hidden;  */
   overflow-x: hidden;
 }
 
@@ -31,13 +31,3 @@ h3 {
 a {
   text-decoration: none;
 }
-
-/* .slide {
-  width: 98%;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-}
-
-.slide::-webkit-scrollbar {
-  display: none;
-} */
