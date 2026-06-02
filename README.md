@@ -4,7 +4,7 @@ A premium hotel booking and management web application built with React 18, Type
 
 ## Overview
 
-StayEase lets guests browse rooms, make bookings, and manage their stays — while giving staff and admins dedicated dashboards to handle arrivals, room management, and reporting. The UI is built around a modern hotel aesthetic using real hotel imagery and a consistent amber/blue-950 design system.
+StayEase lets guests browse rooms, make bookings, and manage their stays — while giving staff and admins dedicated dashboards to handle arrivals, room management, and reporting. The UI is built around a modern hotel aesthetic, using real hotel imagery and a consistent amber/blue-950 colour scheme.
 
 ## Tech Stack
 
@@ -63,7 +63,7 @@ src/
 | `/booking-confirmation` | Booking success | Authenticated |
 | `/dashboard` | Guest bookings dashboard | GUEST |
 | `/staff` | Staff arrivals & management | STAFF, ADMIN |
-| `/admin` | Admin dashboard — stats, rooms, users | ADMIN |
+| `/admin` | Admin dashboard stats, rooms, users | ADMIN |
 | `/login` | Sign in | Guest only |
 | `/register` | Create account | Guest only |
 
