@@ -56,7 +56,7 @@ src/
 
 | Route | Page | Access |
 |---|---|---|
-| `/` | Home — hero, search, destinations, featured rooms, testimonials | Public |
+| `/` | Home hero, search, destinations, featured rooms, testimonials | Public |
 | `/rooms/search` | Room search with filters | Public |
 | `/rooms/:id` | Room detail | Public |
 | `/book/:id` | Booking form | Authenticated |
